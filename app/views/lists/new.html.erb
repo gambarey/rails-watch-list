@@ -4,3 +4,8 @@
   <%= f.text_field :name %>
   <%= f.submit %>
 <% end %>
+<%= simple_form_for(@list) do |f| %>
+  <!-- [...] -->
+  <%= f.input :photo, as: :file %>
+  <!-- [...] -->
+<% end %>
